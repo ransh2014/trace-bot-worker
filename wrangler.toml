@@ -1,0 +1,10 @@
+name = "trace-support-bot"
+main = "src/worker.js"
+compatibility_date = "2025-01-01"
+
+# Workers AI (the hidden Cloudflare fallback model)
+[ai]
+binding = "AI"
+
+# Secrets (GEMINI_KEY, GROQ_KEY) and any dashboard variables (ALLOWED_ORIGINS, ...)
+# live in Cloudflare, not in this repo. The deploy uses --keep-vars so they survive.
